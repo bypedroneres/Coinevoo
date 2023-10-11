@@ -36,7 +36,7 @@ The Coinevoo® website features a modern and visually appealing design tailored 
 
 <h4>✹ Link to the Website ✹</h4>
 
-<h5>https://your-website-url.com/](https://bypedroneres.github.io/Coinevoo/</h5>
+<h5>https://bypedroneres.github.io/Coinevoo/</h5>
 
 <h4>✹ Contact Us ✹</h4>
 
