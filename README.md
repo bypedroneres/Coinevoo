@@ -1,5 +1,5 @@
 <div class="image-container">
-  <img class="CoverImagee" src="assets/navbar.png" alt="Cover">
+  <img class="CoverImagee" src="assets/homepage.png" alt="Cover">
 </div>
 
 <h3>✺ Coinevoo® - Crypto Company Website ✺</h3>
