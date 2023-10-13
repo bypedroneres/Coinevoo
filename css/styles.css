@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #000000;
     font-family: 'Inter', sans-serif;
+    height: 13000px;
 }
 
  /* NAV BAR */
@@ -13,7 +14,8 @@ body {
     border-bottom: 1px solid #ffffff;
     position: fixed; 
     top: 0; 
-    width: 100%; 
+    width: 100%;
+    z-index: 1000;
 }
 
 
@@ -93,7 +95,7 @@ body {
     color: #fff;
 }
 
-h1 {
+.hero-page-content h1 {
     font-size: 50px;
     margin: 0;
     font-weight: 400;
@@ -101,7 +103,7 @@ h1 {
     height: 169px;
 }
 
-p {
+.hero-page-content p {
     font-size: 15px;
     font-weight: 200;
     opacity: 0.5;
