@@ -14,7 +14,7 @@ nav {
 }
 
 .navbar-content {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -70,3 +70,76 @@ nav {
     line-height: 20px;
 }
 
+ /* HERO SECTION */
+
+.hero-container {
+    width: 1036px;
+    height: 556px;
+    margin: auto;
+    margin-top: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.hero-page-content {
+    width: 605px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 400;
+    width: 605px;
+    height: 169px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    opacity: 0.5;
+    width: 490px;
+    height: 52px;
+    margin-top: 30px;
+}
+
+.get-started-button {
+    width: 177px;
+    height: 43px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 43px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 37px;
+    font-weight: 300;
+}
+
+/* Dashboard Video */
+.dashboard-video {
+    width: 264px;
+    height: 556px;
+    border-radius: 37px;
+    border: 1px solid #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 35px;
+}
+
+.crypto-bar img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
