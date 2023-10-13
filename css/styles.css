@@ -73,9 +73,10 @@ nav {
  /* HERO SECTION */
 
 .hero-container {
-    width: 1036px;
+    width: 90%;
     height: 556px;
-    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 30px;
     background: #000;
     display: flex;
@@ -84,7 +85,7 @@ nav {
 }
 
 .hero-page-content {
-    width: 605px;
+    width: 80%;
     color: #fff;
 }
 
