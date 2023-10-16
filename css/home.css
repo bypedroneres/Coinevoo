@@ -283,11 +283,10 @@ video {
     opacity: 0.5;
 }
 
-
 /* FOOTER  */
 
-
 footer {
+    bottom: 0;
     bottom: 0;
     left: 0;
     width: 100%;
