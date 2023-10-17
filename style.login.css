@@ -30,10 +30,12 @@ nav {
     padding: 17px;
 }
 
-.logo {
+.logo a{
     font-size: 25px;
     color: #ffffff;
     font-weight: 400;
+    font-weight: 200;
+    text-decoration: none;
 }
 
 .navbar-buttons {
