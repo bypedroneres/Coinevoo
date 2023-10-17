@@ -13,7 +13,7 @@
                     Dashboard <span class="new-label">New</span>
                 </div>
                 <div class="navbar-button">Contact</div>
-                <div class="navbar-button">About</div>
+                <div class="navbar-button" onclick="scrollToSection('about-section')">About</div>
             </div>
             <div class="login-button">
                 <a href="login.html"><button>Log in</button></a>
@@ -24,7 +24,8 @@
         <div class="hero-page-content">
             <h1>Welcome to Coinevoo®  Your Gateway to the Crypto World</h1>
             <p>Simplify Crypto Trading and Secure Your Future Simplify Crypto Trading and Secure Your Future Simplify Crypto Trading and Secure Your Future</p>
-            <button class="get-started-button">Get started →</button>
+            <button class="get-started-button">
+                <a href="login.html">Get Started →</button></a>
         </div>
         <div class="dashboard-video">
             <video controls>
@@ -112,7 +113,7 @@
         </div>
     </div>
 
-    <div class="about-section">
+    <div class="about-section" id="about-section">
         <div class="about-title">
             <h1>About Us</h1>
         </div>
@@ -208,5 +209,6 @@
             </div>
         </div>
     </footer> 
+    <script src="javascript/script.js"></script>
 </body>
 </html>

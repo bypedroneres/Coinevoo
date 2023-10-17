@@ -129,6 +129,11 @@ body {
     font-weight: 300;
 }
 
+.get-started-button a{
+    text-decoration: none;
+    color: #000;
+}
+
 .dashboard-video {
     width: 264px;
     height: 556px;
