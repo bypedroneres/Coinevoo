@@ -237,7 +237,7 @@ video {
 .about-section {
     background-color: #121212;
     text-align: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .about-title h1 {
@@ -297,7 +297,7 @@ footer {
     color: white;
     text-align: center;
     z-index: 1000;
-    margin-top: 800px;
+    margin-top: 60px;
     font-weight: 100;
 }
 
