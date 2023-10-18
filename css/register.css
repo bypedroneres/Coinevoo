@@ -90,17 +90,14 @@ nav {
 .register-card {
     width: 438px;
     height: 585px;
-    position: absolute;
-    top: 162px;
-    left: 421px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     border-radius: 35px;
     background: #000000;
     text-align: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     border: 1px solid #ffffff;
     padding: 20px;
 }
@@ -162,7 +159,6 @@ nav {
     background-color: #ffffff;
 }
 
-
 .custom-control-input:checked+.custom-control-label::after {
     content: "";
     position: absolute;
@@ -213,18 +209,19 @@ nav {
     border: none;
 }
 
-/* FOOTER */
+/* FOOTER  */
 
 footer {
+    bottom: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 227px;
     background-color: #121212;
     color: white;
     text-align: center;
-    margin-top: 900px;
-    bottom: 0;
-    width: 100%;
     z-index: 1000;
+    margin-top: 1000px;
+    font-weight: 100;
 }
 
 #footer_content {
