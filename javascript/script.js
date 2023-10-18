@@ -5,8 +5,7 @@ function scrollToSection(sectionId) {
         const scrollPosition = section.offsetTop - offset;
         window.scrollTo({
             top: scrollPosition,
-            behavior: 'smooth',
-            duration: 50000 // Adjust the duration (in milliseconds) for slower scrolling
+            behavior: 'smooth' // Use 'smooth' for smooth scrolling
         });
     }
 }
