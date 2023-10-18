@@ -128,12 +128,6 @@ nav {
     width: 100%;
 }
 
-.button-main:hover {
-    border: 1px solid #ffffff;
-    background-color: #000000;
-    color: #ffffff;
-}
-
 .button-main,
 .create-account-button {
     width: 338px;
@@ -178,8 +172,6 @@ footer {
 #footer_community {
     flex: 1;
     text-align: left;
-
-
 }
 
 #footer_contacts {

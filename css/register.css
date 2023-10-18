@@ -1,21 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    font-family: 'Inter', sans-serif;
     background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    height: 50px;
 }
 
 
-/* NAV BAR */
+ /* NAV BAR */
 
-nav {
+ nav {
     background-color: #000000;
     height: 76px;
     border-bottom: 1px solid #ffffff;
-    position: fixed;
-    top: 0;
+    position: fixed; 
+    top: 0; 
     width: 100%;
     z-index: 1000;
 }
@@ -30,10 +29,11 @@ nav {
     padding: 17px;
 }
 
-.logo {
+.logo{
     font-size: 25px;
+    margin-left: 30px;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .navbar-buttons {
@@ -55,6 +55,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
 .login-button button {
@@ -73,12 +74,11 @@ nav {
     height: 20px;
     display: inline-block;
     text-align: center;
-    font-size: 10px;
+    font-size:10px;
     border-radius: 10px;
     margin-left: 10px;
     line-height: 20px;
 }
-
 
 /* REGISTER */
 .register-card {
@@ -106,13 +106,11 @@ nav {
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
-    /* Distância entre inputs e botões */
 }
 
 .register-content h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    /* Reduzi a margem inferior para aproximar do input */
     margin-top: 50px;
 }
 
@@ -124,30 +122,22 @@ nav {
     color: #ffffff;
     margin: 5px 0;
     border: none;
+    padding-left: 30px;
 }
 
-.register-content input::placeholder {
-    padding-left: 10px;
-}
-
-/* Estilo básico para o checkbox personalizado */
 .custom-control-input {
     display: none;
-    /* esconde o checkbox original */
 }
 
 .custom-control-label {
     position: relative;
     margin-top: 10px;
     padding-left: 30px;
-    /* espaço à esquerda para o checkbox visual */
     cursor: pointer;
     display: inline-block;
     line-height: 24px;
-    /* Altura da linha para alinhar o texto verticalmente com o checkbox */
 }
 
-/* Representação visual do checkbox */
 .custom-control-label::before {
     content: "";
     position: absolute;
@@ -162,12 +152,11 @@ nav {
     transition: background-color 0.3s;
 }
 
-/* Estilo para o checkbox quando estiver marcado */
 .custom-control-input:checked+.custom-control-label::before {
     background-color: #ffffff;
 }
 
-/* Representação visual do tick quando o checkbox estiver marcado */
+
 .custom-control-input:checked+.custom-control-label::after {
     content: "";
     position: absolute;
@@ -181,7 +170,6 @@ nav {
     transform: rotate(45deg);
 }
 
-/* Estilo para o link dos termos e condições */
 .register-content a {
     color: #ffffff;
     text-decoration: underline;
@@ -208,7 +196,6 @@ nav {
     cursor: pointer;
     font-size: 16px;
     margin: 5px 0;
-    /* Distância mínima entre os botões */
 }
 
 .account-button {
@@ -226,7 +213,6 @@ footer {
     background-color: #121212;
     color: white;
     text-align: center;
-    padding: 1rem 0;
     margin-top: 900px;
     bottom: 0;
     width: 100%;
@@ -237,16 +223,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 20px;
+    padding: 50px;
 }
 
 #footer_community {
     flex: 1;
     text-align: left;
-    margin-top: 40px;
+
 
 }
 
@@ -261,8 +245,8 @@ footer {
 }
 
 #footer_contacts p {
-    font-size: 14px;
-    color: grey;
+    font-size: 15px;
+    opacity: 0.5; 
 }
 
 #footer-info {
@@ -274,6 +258,7 @@ footer {
 
 #footer-support-legal {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
@@ -281,55 +266,35 @@ footer {
 
 #footer-suport,
 #footer-legal {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     text-align: right;
 }
 
 #footer-suport h1,
 #footer-legal h1 {
     font-size: 20px;
+    font-weight: 200;
 }
 
-/* Adicione margem inferior para separar Privacy Policy e Terms and Conditions */
-#footer-legal .footer-link-button {
-    margin-bottom: 10px;
-}
-
-.footer-link-button {
+#footer-suport p,
+#footer-legal p {
     font-size: 15px;
-    background-color: transparent;
-    border: none;
-    color: gray;
+    opacity: 0.5;
     cursor: pointer;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    transition: color 0.3s;
-    margin-right: 10px;
-}
-
-.footer-link-button:hover {
-    color: white;
-}
-
-.footer-link-button:focus {
-    outline: none;
-    color: white;
 }
 
 #footer-copyright {
     text-align: right;
     margin-top: 40px;
-    margin-right: 0;
     font-size: 14px;
-    color: grey;
 }
 
 .footer-link {
-    color: grey;
+    color: white;
     text-decoration: none;
     margin-right: 10px;
+}
 
+#footer_social_media a.footer-link svg {
+    opacity: 0.5; 
 }

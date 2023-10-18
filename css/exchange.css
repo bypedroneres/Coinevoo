@@ -189,35 +189,33 @@ nav {
     color: grey;
 }
 
-/* FOOTER */
+/* FOOTER  */
 
 footer {
+    bottom: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 227px;
     background-color: #121212;
     color: white;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 1055px;
-    bottom: 0;
-    width: 100%;
     z-index: 1000;
+    margin-top: 60px;
+    font-weight: 100;
 }
 
 #footer_content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 20px;
+    padding: 50px;
 }
 
 #footer_community {
     flex: 1;
     text-align: left;
-    margin-top: 40px;
+
 
 }
 
@@ -232,8 +230,8 @@ footer {
 }
 
 #footer_contacts p {
-    font-size: 14px;
-    color: grey;
+    font-size: 15px;
+    opacity: 0.5; 
 }
 
 #footer-info {
@@ -245,6 +243,7 @@ footer {
 
 #footer-support-legal {
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
@@ -252,55 +251,35 @@ footer {
 
 #footer-suport,
 #footer-legal {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     text-align: right;
 }
 
 #footer-suport h1,
 #footer-legal h1 {
     font-size: 20px;
+    font-weight: 200;
 }
 
-/* Adicione margem inferior para separar Privacy Policy e Terms and Conditions */
-#footer-legal .footer-link-button {
-    margin-bottom: 10px;
-}
-
-.footer-link-button {
+#footer-suport p,
+#footer-legal p {
     font-size: 15px;
-    background-color: transparent;
-    border: none;
-    color: gray;
+    opacity: 0.5;
     cursor: pointer;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    transition: color 0.3s;
-    margin-right: 10px;
-}
-
-.footer-link-button:hover {
-    color: white;
-}
-
-.footer-link-button:focus {
-    outline: none;
-    color: white;
 }
 
 #footer-copyright {
     text-align: right;
     margin-top: 40px;
-    margin-right: 0;
     font-size: 14px;
-    color: grey;
 }
 
 .footer-link {
-    color: grey;
+    color: white;
     text-decoration: none;
     margin-right: 10px;
+}
 
+#footer_social_media a.footer-link svg {
+    opacity: 0.5; 
 }
