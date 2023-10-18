@@ -9,3 +9,7 @@
         });
     }
 }
+
+function redirectToRegisterPage() {
+    window.location.href = "register.html";
+}

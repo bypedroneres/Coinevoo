@@ -136,7 +136,7 @@ nav {
 }
 
 .button-main,
-.create-account-button {
+.create-account-button a {
     width: 338px;
     height: 46px;
     border-radius: 35px;
