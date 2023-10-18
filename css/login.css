@@ -17,6 +17,7 @@ nav {
     z-index: 1000;
 }
 
+
 .navbar-content {
     max-width: 100%;
     margin: 0 auto;
@@ -42,13 +43,14 @@ nav {
     color: #ffffff;
     margin: 0 15px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .login-button {
     border-radius: 11px;
     width: 71px;
     height: 39px;
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +63,7 @@ nav {
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .new-label {
@@ -74,6 +77,10 @@ nav {
     border-radius: 10px;
     margin-left: 10px;
     line-height: 20px;
+}
+.navbar-button a {
+    text-decoration: none; 
+    color: #ffffff; 
 }
 
 /* LOGIN */
