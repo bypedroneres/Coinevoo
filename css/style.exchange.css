@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+}
+
+
+/* NAV BAR */
+
+nav {
+    background-color: #000000;
+    height: 76px;
+    border-bottom: 1px solid #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.navbar-buttons {
+    display: flex;
+}
+
+.navbar-button {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.login-button {
+    border-radius: 11px;
+    width: 71px;
+    height: 39px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button button {
+    font-size: 15px;
+    color: #000000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.new-label {
+    background-color: #ffffff;
+    color: #000000;
+    width: 43px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+/* DIV 1*/
+
+.wallet-container {
+    width: 306px;
+    height: 411px;
+    top: 104px;
+    left: 955px;
+    border-radius: 35px;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+}
+
+.principal-container {
+    width: 917px;
+    height: 411px;
+    top: 104px;
+    left: 19px;
+    border-radius: 35px;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+}
+
+
+
+/* DIV 2*/
+
+.segundo-container {
+    width: 1242px;
+    height: 168px;
+    top: 531px;
+    left: 19px;
+    border-radius: 35px;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+}
+
+/* DIV 3*/
+.terceiro-container {
+    width: 540px;
+    height: 233px;
+    top: 709px;
+    left: 19px;
+    border-radius: 35px;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.contact-container {
+
+    width: 180px;
+    height: 233px;
+    top: 709px;
+    left: 589px;
+    /* Adiciona 30px de espaço ao lado do terceiro contêiner */
+    border-radius: 35px;
+    border: none;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 490px;
+
+}
+
+#contact-support {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+#contact-support,
+#contact-legal {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#contact-suport h1,
+#contact-legal h1 {
+    font-size: 20px;
+}
+
+/* Adicione margem inferior para separar Privacy Policy e Terms and Conditions */
+#contact-legal .contact-link-button {
+    margin-bottom: 10px;
+}
+
+.contact-link-button {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.contact-link-button:hover {
+    color: grey;
+}
+
+.contact-link-button:focus {
+    outline: none;
+    color: grey;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 227px;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1055px;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+#footer_community {
+    flex: 1;
+    text-align: left;
+    margin-top: 40px;
+
+}
+
+#footer_contacts {
+    flex: 1;
+    text-align: left;
+}
+
+#footer_contacts h1 {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#footer_contacts p {
+    font-size: 14px;
+    color: grey;
+}
+
+#footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#footer-support-legal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+#footer-suport,
+#footer-legal {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#footer-suport h1,
+#footer-legal h1 {
+    font-size: 20px;
+}
+
+/* Adicione margem inferior para separar Privacy Policy e Terms and Conditions */
+#footer-legal .footer-link-button {
+    margin-bottom: 10px;
+}
+
+.footer-link-button {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    transition: color 0.3s;
+    margin-right: 10px;
+}
+
+.footer-link-button:hover {
+    color: white;
+}
+
+.footer-link-button:focus {
+    outline: none;
+    color: white;
+}
+
+#footer-copyright {
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 0;
+    font-size: 14px;
+    color: grey;
+}
+
+.footer-link {
+    color: grey;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
