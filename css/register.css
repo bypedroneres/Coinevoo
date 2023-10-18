@@ -7,9 +7,9 @@ body {
 }
 
 
- /* NAV BAR */
+/* NAV BAR */
 
- nav {
+nav {
     background-color: #000000;
     height: 76px;
     border-bottom: 1px solid #ffffff;
@@ -45,6 +45,7 @@ body {
     color: #ffffff;
     margin: 0 15px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .login-button {
@@ -78,6 +79,10 @@ body {
     border-radius: 10px;
     margin-left: 10px;
     line-height: 20px;
+}
+.navbar-button a {
+    text-decoration: none; 
+    color: #ffffff; 
 }
 
 /* REGISTER */
