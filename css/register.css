@@ -306,3 +306,10 @@ footer {
     opacity: 0.5; 
 }
 
+#footer-info a {
+    text-decoration: none;
+    color: #FFF;
+    opacity:0.5;
+}
+
+

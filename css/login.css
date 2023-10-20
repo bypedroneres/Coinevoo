@@ -89,7 +89,6 @@ nav {
     min-height: 100vh; 
     padding-bottom: 100px;
     box-sizing: border-box;
-    background-color: aqua;
 }
 
 .login-card {
@@ -164,18 +163,17 @@ nav {
 /* FOOTER  */
 
 footer {
-    position: relative;
+    bottom: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #121212;
     color: white;
     text-align: center;
+    z-index: 1000;
+    margin-top: 60px;
     font-weight: 100;
-    z-index: 1;
-    margin-top: 100px;
 }
-
 
 #footer_content {
     display: flex;
@@ -188,6 +186,8 @@ footer {
 #footer_community {
     flex: 1;
     text-align: left;
+
+
 }
 
 #footer_contacts {
@@ -254,3 +254,10 @@ footer {
 #footer_social_media a.footer-link svg {
     opacity: 0.5; 
 }
+
+#footer-info a {
+    text-decoration: none;
+    color: #FFF;
+    opacity:0.5;
+}
+
