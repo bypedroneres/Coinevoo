@@ -86,10 +86,13 @@ nav {
 /* LOGIN */
 
 .content-container {
-    min-height: 100vh; 
-    padding-bottom: 100px;
+    padding-bottom: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .login-card {
     width: 438px;
@@ -114,7 +117,6 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .login-content h2 {
