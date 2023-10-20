@@ -1,15 +1,4 @@
- function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        const offset = 76; // Adjust this value as needed
-        const scrollPosition = section.offsetTop - offset;
-        window.scrollTo({
-            top: scrollPosition,
-            behavior: 'smooth' // Use 'smooth' for smooth scrolling
-        });
-    }
-}
-
-function redirectToRegisterPage() {
-    window.location.href = "register.html";
-}
+document.getElementById("about-link").addEventListener("click", function() {
+    const aboutSection = document.querySelector(".about-section");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+});
