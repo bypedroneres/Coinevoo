@@ -92,14 +92,15 @@ nav {
     height: 585px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    align-items: center;
     border-radius: 35px;
     background: #000000;
     text-align: center;
     color: white;
     border: 1px solid #ffffff;
     padding: 20px;
+    margin-top: 159px;
 }
 
 .register-content {
@@ -222,6 +223,7 @@ footer {
     z-index: 1000;
     margin-top: 1000px;
     font-weight: 100;
+    position: relative;
 }
 
 #footer_content {
@@ -303,3 +305,4 @@ footer {
 #footer_social_media a.footer-link svg {
     opacity: 0.5; 
 }
+

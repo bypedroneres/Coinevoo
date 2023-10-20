@@ -85,6 +85,13 @@ nav {
 
 /* LOGIN */
 
+.content-container {
+    min-height: 100vh; 
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
 .login-card {
     width: 438px;
     height: 585px;
@@ -98,7 +105,8 @@ nav {
     justify-content: center;
     border: 1px solid #ffffff;
     padding: 20px;
-    margin-top: 159px;
+    margin-top: 150px;
+    position: relative;
 }
 
 .login-content {
@@ -156,7 +164,7 @@ nav {
 /* FOOTER  */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -165,6 +173,7 @@ footer {
     text-align: center;
     font-weight: 100;
     z-index: 1;
+    margin-top: 100px;
 }
 
 
