@@ -33,18 +33,39 @@
 
     </body>
 
-
-
     <!-- REGISTER -->
 
     <div class="register-card">
-        <div class="register-content">
+        <form class="register-content" id="form-register" method="" form-action="">
             <h2>Register</h2>
-            <input type="name" placeholder="First name">
-            <input type="lastname" placeholder="Last name">
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
+            <input type="name" id="primeiro_nome" placeholder="First name">
+            <input id="primeiro_nome-erro" type="hidden" readonly
+                style="border: none; color: red; background:transparent; width: 180px;height: 10px;">
+
+            <input type="name" id="ultimo_nome" placeholder="Last name">
+            <input id="ultimo_nome-erro" type="hidden" readonly
+                style="border: none; color: red; background:transparent;width: 180px;height: 10px;">
+
+            <input type="number" id="cpf" placeholder="CPF">
+            <input id="cpf-erro" type="hidden" readonly style="border: none; color: red; background:transparent;width: 150px;
+                                                                                            height: 10px;">
+
+            <input type="number" id="telefone" placeholder="Phone">
+            <input id="telefone-erro" type="hidden" readonly
+                style="border: none; color: red;background:transparent;width: 180px;height: 10px;">
+
+            <input type="email" id="email" placeholder="E-mail">
+            <input id="email-erro" type="hidden" readonly
+                style="border: none; color: red;background:transparent; width: 180px;height: 10px;">
+
+            <input type="password" id="senha" placeholder="Password">
+            <input id="senha-erro" type="hidden" readonly
+                style="border: none; color: red;background:transparent;width: 180px;height: 10px;">
+
+            <input type="password" id="confirm_senha" placeholder="Confirm Password">
+            <input id="password-erro" type="hidden" readonly
+                style="border: none; color: red;background:transparent;width: 180px;height: 10px;">
+
             <input type="checkbox" class="custom-control-input" id="form-checkbox">
             <label class="custom-control-label" for="form-checkbox">
                 I've read and accept
@@ -52,14 +73,12 @@
                     Terms & Conditions
                 </a>
             </label>
-        </div>
-        <div class="button-group">
-            <button class="button-main">Create Account</button>
-            <button class="account-button">Already have an account? Log in</button>
-        </div>
+            <div class="button-group">
+                <button class="button-main" type="submit" id="submit-register">Create Account</button>
+                <button class="account-button">Already have an account? Log in</button>
+            </div>
+        </form>
     </div>
-    </div>
-
 
     <!-- FOOTER -->
 
@@ -124,5 +143,63 @@
         </div>
     </footer>
 </body>
+
+<script>
+    let form = document.getElementById("form-register");
+    form.addEventListener("submit", async (e) => {
+        let submit = document.getElementById("submit-register");
+        submit.disabled = true;
+        e.preventDefault();
+
+        let primeiro_nome = document.getElementById("primeiro_nome").value;
+        let ultimo_nome = document.getElementById("ultimo_nome").value;
+        let cpf = document.getElementById("cpf").value;
+        let telefone = document.getElementById("telefone").value;
+        let email = document.getElementById("email").value;
+        let senha = document.getElementById("senha").value;
+        let confirm_senha = document.getElementById("confirm_senha").value;
+
+        try {
+            const response = await fetch("register.php", {
+                method: "POST",
+                body: JSON.stringify({
+                    primeiro_nome: primeiro_nome,
+                    ultimo_nome: ultimo_nome,
+                    cpf: cpf,
+                    telefone: telefone,
+                    email: email,
+                    senha: senha,
+                    confirm_senha: confirm_senha
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            });
+
+            if (response.ok) {
+                form.reset();
+                Swal.fire(
+                    'Sucesso!',
+                    'Cadastro realizado, faça login para continuar!.',
+                    'success'
+                )
+
+            } else {
+                const text = await response.text();
+                let erros = JSON.parse(text);
+                erros.erros.forEach(element => {
+                    console.log(element.parameter_name);
+                    let inputErro = document.getElementById(element.parameter_name + "-erro");
+                    inputErro.type = "text";
+                    inputErro.value = element.message;
+                });
+            }
+        } catch (error) {
+            console.error("An error occurred:", error);
+        } finally {
+            submit.disabled = false;
+        }
+    });
+</script>
 
 </html>
