@@ -148,8 +148,9 @@ nav {
 
 .profile-content {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
     color: #ffffff;
     padding: 40px;
     font-size: 20px;
@@ -165,11 +166,80 @@ nav {
     height: 50px;
     width: 50px;
     margin-right: 20px;
-    background-color: rgb(161, 161, 161);
+    background-color: #dedede;
     border-radius: 100px;
     cursor: pointer;
 }
 
 .profile-header h3 {
     font-weight: 100;
+}
+
+.balance {
+    display: flex;
+    width: 100%;
+}
+
+.balance-content p{
+    font-size: 15px;
+    font-weight: 100;
+}
+.balance-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.buttons {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.button-circle-buy
+,.button-circle-sell {
+    background-color: #dedede;
+    width: 54px;
+    height: 54px;
+    border-radius: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-circle-send
+,.button-circle-withdraw {
+    background: #2D2D2D;
+    width: 54px;
+    height: 54px;
+    border-radius: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-content p {
+    font-size: 15px;
+}
+
+.history {
+    margin-top: 20px;
+    background-color: #2D2D2D;
+    width: 301px;
+    height: 117px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
