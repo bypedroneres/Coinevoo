@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
@@ -43,7 +44,7 @@
                 style="border: none; color: red; background:transparent; width: 180px;height: 10px;">
             <div class="button-group">
                 <button class="button-main" type="submit" id="submit-login">Log in</button>
-                <a href="register.html"><button class="create-account-button">Create Account</button></a>
+                <a href="register.html" class="create-account-button">Create Account</a>
             </div>
         </form>
     </div>
@@ -143,7 +144,7 @@
         }).then((text) => {
             if (response.ok) {
                 // Redirecione o usuário para a página de destino
-                window.location.href = "http://localhost/Telas2023/exchange.php";
+                window.location.href = "https://www.coinevoo.com.br/wallet/exchange.php";
             } else {
                 let erros = obj = JSON.parse(text)
                 erros.erros.forEach(element => {
