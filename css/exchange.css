@@ -50,7 +50,7 @@ nav {
     border-radius: 11px;
     width: 71px;
     height: 39px;
-    background-color: #ffffff;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,6 @@ nav {
     background: none;
     border: none;
     outline: none;
-    cursor: pointer;
 }
 
 .new-label {
@@ -99,6 +98,8 @@ nav {
     justify-content: space-around;
 }
 
+/* METRICS */
+
 .metrics {
     width: 793px;
     height: 512px;
@@ -129,14 +130,71 @@ nav {
     margin-top: 35px;
 }
 
+/* PRICE CHART */
+
 .price-chart {
     width: 209px;
-    height: 184px;
+    height: 252px;
     flex-shrink: 0;
     border-radius: 22px;
     background: #2D2D2D;
 }
 
+.price-chart-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* COMING SOON */
+
+.coming-soon {
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.label {
+    background-color: #2D2D2D;
+    display: flex;
+    width: 108px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.crypto-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 160px;
+}
+
+.crypto {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    height: 22px;
+}
+
+/* PROFILE */
 
 .profile {
     width: 385px;
@@ -148,8 +206,9 @@ nav {
 
 .profile-content {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
     color: #ffffff;
     padding: 40px;
     font-size: 20px;
@@ -165,11 +224,80 @@ nav {
     height: 50px;
     width: 50px;
     margin-right: 20px;
-    background-color: rgb(161, 161, 161);
+    background-color: #dedede;
     border-radius: 100px;
     cursor: pointer;
 }
 
 .profile-header h3 {
     font-weight: 100;
+}
+
+.balance {
+    display: flex;
+    width: 100%;
+}
+
+.balance-content p{
+    font-size: 15px;
+    font-weight: 100;
+}
+.balance-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.buttons {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.button-circle-buy
+,.button-circle-sell {
+    background-color: #dedede;
+    width: 54px;
+    height: 54px;
+    border-radius: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-circle-send
+,.button-circle-withdraw {
+    background: #2D2D2D;
+    width: 54px;
+    height: 54px;
+    border-radius: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-content p {
+    font-size: 15px;
+}
+
+.history {
+    margin-top: 20px;
+    background-color: #2D2D2D;
+    width: 301px;
+    height: 117px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
