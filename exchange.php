@@ -1,0 +1,180 @@
+<?php
+session_start();
+if (empty($_SESSION['nome'])) {
+    header("location login.html");
+    exit();
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.exchange.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="navbar-content">
+            <div class="logo">Coinevoo®</div>
+            <div class="navbar-buttons">
+                <div class="navbar-button"><a href="index.html">Home</a></div>
+                <div class="navbar-button">
+                    <a href="login.html">Dashboard <span class="new-label">New</span></a>
+                </div>
+                <div class="navbar-button">
+                    <a href="mailto:support@coinevoo.com.br">Contact</a>
+                </div>
+                <div class="navbar-button">About</div>
+            </div>
+            <div class="login-button">
+                <button>Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DASHBOARD -->
+
+    <div class="dashboard">
+        <div class="dashboard-content">
+
+            <!-- METRICS  -->
+
+            <div class="metrics">
+                <div class="metrics-content">
+                    <div class="metrics-chart">
+                        <div class="metrics-chart-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="209" height="184" viewBox="0 0 209 184" fill="none">
+                                <rect width="209" height="184" rx="22" fill="#2D2D2D" />
+                                <g opacity="0.5">
+                                    <rect x="87" y="74" width="36" height="36" rx="17" fill="#2D2D2D" stroke="#D9D9D9" stroke-width="4" />
+                                    <path d="M94.4736 92H114.474" stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- PRICE CHART -->
+
+                    <div class="price-chart">
+                        <div class="price-chart-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="209" height="184" viewBox="0 0 209 184" fill="none">
+                                <rect width="209" height="184" rx="22" fill="#2D2D2D" />
+                                <g opacity="0.5">
+                                    <rect x="87" y="74" width="36" height="36" rx="17" fill="#2D2D2D" stroke="#D9D9D9" stroke-width="4" />
+                                    <path d="M94.4736 92H114.474" stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="coming-soon">
+                    <div class="labels">
+                        <div class="label">
+                        </div>
+                        <div class="label">
+                        </div>
+                        <div class="label">
+                        </div>
+                        <div class="label">
+                        </div>
+                        <div class="label">
+                        </div>
+                        <div class="label">
+                        </div>
+                    </div>
+                    <div class="crypto-list">
+                        <div class="crypto">
+                        </div>
+                        <div class="crypto">
+                        </div>
+                        <div class="crypto">
+                        </div>
+                        <div class="crypto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROFILE  -->
+
+            <div class="profile">
+                <div class="profile-content">
+                    <div class="profile-header">
+                        <div class="profile-picture">
+                        </div>
+                        <h3>
+                            <?php echo $_SESSION['nome'] ?>
+                        </h3>
+                    </div>
+                    <div class="balance">
+                        <div class="balance-content">
+                            <p>Total Balance</p>
+                            <h2>R$ 78,820.00</h2>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="button-buy">
+                            <div class="button-content">
+                                <div class="button-circle-buy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <path d="M10.5 1V20" stroke="black" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M1 10.5L20 10.5" stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p>Buy</p>
+                            </div>
+                        </div>
+                        <div class="button-sell">
+                            <div class="button-content">
+                                <div class="button-circle-sell">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <path d="M10.5 1V20" stroke="black" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M1 10.5L20 10.5" stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p>Sell</p>
+                            </div>
+                        </div>
+                        <div class="button-send">
+                            <div class="button-content">
+                                <div class="button-circle-send">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="1" y="1" width="22" height="22" rx="11" stroke="#D9D9D9" stroke-width="2" />
+                                        <path opacity="0.5" d="M5.68457 12H17.6846" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p>Send</p>
+                            </div>
+                        </div>
+                        <div class="button-withdraw">
+                            <div class="button-content">
+                                <div class="button-circle-withdraw">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="1" y="1" width="22" height="22" rx="11" stroke="#D9D9D9" stroke-width="2" />
+                                        <path opacity="0.5" d="M5.68457 12H17.6846" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p>Withdraw</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="1" y="1" width="22" height="22" rx="11" stroke="#D9D9D9" stroke-width="2" />
+                            <path opacity="0.5" d="M5.68457 12H17.6846" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
