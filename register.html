@@ -4,34 +4,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/register.css">
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <body>
 
-        <!-- NAVBAR -->
 
-        <nav>
-            <div class="navbar-content">
-                <div class="logo">Coinevoo®</div>
-                <div class="navbar-buttons">
-                    <div class="navbar-button"><a href="index.html">Home</a></div>
-                    <div class="navbar-button">
-                        <a href="login.html">Dashboard <span class="new-label">New</span></a>
-                    </div>
-                    <div class="navbar-button">
-                        <a href="mailto:support@coinevoo.com.br">Contact</a>
-                    </div>
-                    <div class="navbar-button">About</div>
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="navbar-content">
+            <div class="logo">Coinevoo®</div>
+            <div class="navbar-buttons">
+                <div class="navbar-button"><a href="index.html">Home</a></div>
+                <div class="navbar-button">
+                    <a href="login.html">Dashboard <span class="new-label">New</span></a>
                 </div>
-                <div class="login-button">
-                    <a href="login.html"><button>Log in</button></a>
+                <div class="navbar-button">
+                    <a href="mailto:support@coinevoo.com.br">Contact</a>
                 </div>
+                <div class="navbar-button">About</div>
             </div>
-        </nav>
+            <div class="login-button">
+                <a href="login.html"><button>Log in</button></a>
+            </div>
+        </div>
+    </nav>
 
-    </body>
+
 
 
 
@@ -79,8 +81,8 @@
                 </div>
 
                 <div class="button-group">
-                    <button class="button-main">Create Account</button>
-                    <button class="account-button">Already have an account? Log in</button>
+                    <button class="button-main" type="submit" id="submit-register">Create Account</button>
+                    <a href="login.html" class="account-button">Already have an account? Log in</a>
                 </div>
             </form>
         </div>
@@ -156,6 +158,7 @@
         </div>
     </footer>
 </body>
+
 <script>
     let form = document.getElementById("form-register");
     form.addEventListener("submit", async (e) => {
